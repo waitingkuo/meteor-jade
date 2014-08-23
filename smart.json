@@ -1,8 +1,9 @@
 {
-  "name": "jade",
+  "name": "waitingkuo:jade",
   "description": "Jade template language for Meteor",
-  "author": "Maxime QUANDALLE <maxime@quandalle.com>",
+  "author": "Wei-Ting Kuo <waitingkuo@gmail.com>",
   "version": "0.2.6",
   "git": "https://github.com/mquandalle/meteor-jade.git",
-  "homepage": "https://github.com/mquandalle/meteor-jade"
+  "git": "https://github.com/waitingkuo/meteor-jade",
+  "homepage": "https://github.com/waitingkuo/meteor-jade"
 }
