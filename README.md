@@ -1,5 +1,8 @@
 # Jade for Meteor
 
+### This repository is forked from <https://github.com/mquandalle/meteor-jade> and is to make it competitable with meteor 0.9
+
+
 This [Meteor](https://www.meteor.com/) smart package provides support for
 the [Jade](http://jade-lang.com/) template engine as a Spacebars alternative.
 
