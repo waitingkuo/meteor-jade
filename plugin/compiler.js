@@ -300,7 +300,8 @@ _.extend(Compiler.prototype, {
 
     // Ignore top level comments
     if (node.type === "Comment" || node.type === "BlockComment" ||
-        node.type === "TAG" && _.isUndefined(node.name)) {
+        node.type === "Text" && _.isUndefined(node.name) ||
+        node.type === "Tag" && _.isUndefined(node.name)) {
       return;
     }
 
