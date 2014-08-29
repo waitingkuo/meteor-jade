@@ -2,7 +2,7 @@
   "name": "waitingkuo:jade",
   "description": "Jade template language for Meteor",
   "author": "Wei-Ting Kuo <waitingkuo@gmail.com>",
-  "version": "0.2.6",
+  "version": "0.2.7",
   "git": "https://github.com/mquandalle/meteor-jade.git",
   "git": "https://github.com/waitingkuo/meteor-jade",
   "homepage": "https://github.com/waitingkuo/meteor-jade"
