@@ -42,8 +42,11 @@ world</p></template>
 
 <template name="match-html-multipleInlineHelpers"><p>Hello {{foo}} {{bar}} {{baz}}</p></template>
 
-<template name="match-html-tagAttributeInterpolation"><button class="btn {{btnKind}}"></button></template>
+<template name="match-html-tagAttributeInterpolation"><button data-foo="foo-{{data_foo}}-bar"></button></template>
 
+<template name="match-html-classAttributeInterpolation"><button class="btn {{btnKind}}"></button></template>
+
+<template name="match-html-multipleAttributeInterpolation"><button class="btn {{btnKind}} {{btnActive}}"></button></template>
 
 <!-- Build-in components -->
 
