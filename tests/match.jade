@@ -80,8 +80,13 @@ template(name="match-jade-multipleInlineHelpers")
   p Hello #{foo} #{bar} #{baz}
 
 template(name="match-jade-tagAttributeInterpolation")
+  button(data-foo="foo-#{data_foo}-bar")
+
+template(name="match-jade-classAttributeInterpolation")
   button(class="btn #{btnKind}")
 
+template(name="match-jade-multipleAttributeInterpolation")
+  button(class="btn #{btnKind} #{btnActive}")
 
 //- Build-in components
 

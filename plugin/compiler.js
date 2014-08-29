@@ -214,8 +214,22 @@ _.extend(Compiler.prototype, {
       var val = attr.val;
       var key = attr.name;
 
+      // For interpolated attribute values
+      if (/\" \+ \(.*?\) \+ \"/.test(val)) {
+        var strs = val.split(' + ');
+        val = [];
+        strs.forEach(function (str) {
+          if (/\(.*?\)/.test(str)) {
+            val.push(self._spacebarsParse(self.lookup(str.slice(1, -1), attr.escaped)));
+          }
+          else {
+            if (str.slice(1, -1)) val.push(str.slice(1, -1));
+          }
+        });
+      }
+
       // XXX We need a better handler for JavaScript code
-      if (/^('|")/.test(val) && val.slice(-1) === val.slice(0, 1) &&
+      else if (/^('|")/.test(val) && val.slice(-1) === val.slice(0, 1) &&
                                                                val.length > 2) {
         // First case this is a string
         val = self.parseText(val.slice(1, -1));
