@@ -2,7 +2,7 @@ var sourceHandler = function (compileStep) {
 
   // XXX Code copied from
   // packages/templating/plugin/compile-template.js:6
-  if (! compileStep.arch.match(/^web.browser(\.|$)/))
+  if (! compileStep.arch.match(/^web(\.|$)/))
     return;
 
   // Parse and compile the content
